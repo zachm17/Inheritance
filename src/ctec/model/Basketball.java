@@ -9,5 +9,6 @@ public class Basketball extends Sports
 	{
 		this.setTeamName("Utah");
 		this.setPointsScored(111);
+		this.setPlace("Vivint Arena");
 	}
 }
