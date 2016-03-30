@@ -2,10 +2,6 @@ package ctec.model;
 
 public abstract class Sports
 {
-
-	
-	
-	
 	//Three data members
 	private String teamName;
 	private String place;
