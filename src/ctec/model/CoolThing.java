@@ -1,6 +1,6 @@
 package ctec.model;
 
-public interface CoolThing
+public interface CoolThing 
 {
 	public double coolnessLevel();
 	public void coolAction(int numberOfTimes);

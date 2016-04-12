@@ -42,19 +42,19 @@ return  9002;
 }
 
 
-public void coolAction(int numberOfTimes)
+		public void coolAction(int numberOfTimes)
 
-{
+		{
 
-for(int spot = 0; spot < numberOfTimes; spot++)
+			for(int spot = 0; spot < numberOfTimes; spot++)
 
-{
+			{
 
-JOptionPane.showMessageDialog(null, "This car is cool." );
+				JOptionPane.showMessageDialog(null, "This car is cool." );
 
-}
+			}
 
-}
+		}
 
 
 public int cost()
