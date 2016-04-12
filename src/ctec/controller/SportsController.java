@@ -9,6 +9,13 @@ import ctec.model.NissanCar;
 
 public class SportsController
 {
+	
+	public SportsController()
+	{
+		//build all model components
+		makeCoolList();
+		//build view
+	}
 	private String TeamName;
 	private String Place;
 	private long PointsScored;
@@ -33,5 +40,8 @@ public class SportsController
 		coolThings.add(new NissanCar());
 	}
 	
-	
+	public void start()
+	{
+		
+	}
 }
