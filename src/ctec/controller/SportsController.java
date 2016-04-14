@@ -44,4 +44,25 @@ public class SportsController
 	{
 		
 	}
+	
+	private void swap(int firstLocation, int secondLocation)
+	{
+		CoolThing temp = coolThings.get(firstLocation);
+		coolThings.set(firstLocation, coolThings.get(secondLocation));
+		coolThings.set(secondLocation, temp);
+	}
+	
+	public void insertionSort()
+	{
+		for(int outerLoop = 1; outerLoop < coolThings.size(); outerLoop++)
+		{
+			int innerLoop = outerLoop;
+			while(innerLoop > 0 && (coolThings.get(innerLoop-1).compareTo(coolThings.get(innerLoop))) > 0)
+			{
+				swap(innerLoop, innerLoop-1);
+				innerLoop--;
+			}
+		}
+	}
+	
 }

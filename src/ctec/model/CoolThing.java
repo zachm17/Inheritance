@@ -1,8 +1,7 @@
 package ctec.model;
 
-<<<<<<< HEAD
-public interface CoolThing 
-=======
+
+
 /**
  * Interface with two methods with a parameter and two methods with a return value.
  * @author Zach, Greyson, Billy, Alejandro
@@ -10,11 +9,11 @@ public interface CoolThing
  */
 
 public interface CoolThing
->>>>>>> origin/master
 {
 	public double coolnessLevel();
 	public void coolAction(int numberOfTimes);
 	public int cost();
 	public void EthanBradberry(int numberOfTimes);
+	public int compareTo(Object thing);
 	
 }
