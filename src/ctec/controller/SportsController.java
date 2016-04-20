@@ -53,7 +53,7 @@ public class SportsController
 		String coolLevels = "";
 		for(CoolThing currentCool : coolThings)
 		{
-			coolLevels+=("This is a " + currentCool.toString() + " and has a silliness level of " + currentCool.coolnessLevel() + "\n");
+			coolLevels+=("This is a " + currentCool.toString() + " and has a coolness level of " + currentCool.coolnessLevel() + "\n");
 		}
 		
 		return coolLevels;

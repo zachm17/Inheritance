@@ -51,7 +51,7 @@ public abstract class Sports implements CoolThing, Comparable
 	
 	public String toString()
 	{
-		String description = "This is a " + this.getClass().getName() + " and has a meme of: ";
+		String description = "This is a " + this.getClass().getName() + " and has a cost of: ";
 		
 		return description;
 		
