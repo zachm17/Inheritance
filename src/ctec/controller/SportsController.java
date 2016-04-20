@@ -1,10 +1,14 @@
 package ctec.controller;
 
 import java.util.ArrayList;
+
 import ctec.model.Basketball;
 import ctec.model.CoolThing;
 import ctec.model.Football;
 import ctec.model.NissanCar;
+import ctec.view.SportsFrame;
+
+
 
 
 public class SportsController
@@ -13,12 +17,34 @@ public class SportsController
 	public SportsController()
 	{
 		//build all model components
+		this.coolThings = new ArrayList<CoolThing>();
 		makeCoolList();
+		baseFrame = new SportsFrame(this);
 		//build view
 	}
+	/**
+	 * @return the coolThings
+	 */
+	public ArrayList<CoolThing> getCoolThings()
+	{
+		return coolThings;
+	}
+
+	/**
+	 * @param coolThings the coolThings to set
+	 */
+	public void setCoolThings(ArrayList<CoolThing> coolThings)
+	{
+		this.coolThings = coolThings;
+	
+	
+	}
+	
 	private String TeamName;
 	private String Place;
 	private long PointsScored;
+	private int start;
+	private SportsFrame baseFrame;
 	
 	private ArrayList<CoolThing> coolThings;
 	
@@ -27,7 +53,7 @@ public class SportsController
 		String coolLevels = "";
 		for(CoolThing currentCool : coolThings)
 		{
-			coolLevels.concat("This is a " + currentCool.toString() + " and has a silliness level of " + currentCool.coolnessLevel() + "\n");
+			coolLevels+=("This is a " + currentCool.toString() + " and has a silliness level of " + currentCool.coolnessLevel() + "\n");
 		}
 		
 		return coolLevels;
@@ -72,7 +98,7 @@ public class SportsController
 			int midPoint = partition(low, high);
 			quicksort(low, midPoint-1);
 			quicksort(midPoint+1, high);
-			
+	
 		}
 	}
 	

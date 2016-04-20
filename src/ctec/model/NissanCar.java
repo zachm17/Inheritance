@@ -80,6 +80,15 @@ JOptionPane.showMessageDialog(null, "I'm Ethan Bradberry!!!!!!!");
 
 }
 
+
+
+@Override
+public int compareTo(Object thing)
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
 }
 
 
