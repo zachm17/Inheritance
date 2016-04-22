@@ -23,6 +23,17 @@ public class Basketball extends Sports
 		this.setPlace("Vivint Arena");
 	}
 	
+	public String toString()
+
+	{
+
+	String description = "This is a " + this.getClass().getName() + " and has a cost of: " + cost();
+
+
+	return description;
+
+	}
+	
 	public Basketball(SportsController baseController)
 	{
 		

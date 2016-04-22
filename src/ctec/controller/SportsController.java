@@ -3,8 +3,11 @@ package ctec.controller;
 import java.util.ArrayList;
 
 import ctec.model.Basketball;
+import ctec.model.Book;
+import ctec.model.ChapterBook;
 import ctec.model.CoolThing;
 import ctec.model.Football;
+import ctec.model.NBABasketballGame;
 import ctec.model.NissanCar;
 import ctec.view.SportsFrame;
 
@@ -64,6 +67,9 @@ public class SportsController
 		coolThings.add(new Basketball());
 		coolThings.add(new Football());
 		coolThings.add(new NissanCar());
+		coolThings.add(new ChapterBook());
+		coolThings.add(new NBABasketballGame());
+		
 	}
 	
 	public void start()

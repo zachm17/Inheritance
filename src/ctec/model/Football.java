@@ -18,6 +18,16 @@ public class Football extends Sports
 		
 	}
 
+	public String toString()
+
+	{
+
+	String description = "This is a " + this.getClass().getName() + " and has a cost of: " + cost();
+
+
+	return description;
+
+	}
 	
 	public double coolnessLevel()
 	{
